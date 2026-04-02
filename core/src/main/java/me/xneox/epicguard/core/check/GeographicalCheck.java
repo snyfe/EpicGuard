@@ -29,6 +29,8 @@ public final class GeographicalCheck extends AbstractCheck {
 
   @Override
   public boolean isDetected(@NotNull ConnectingUser user) {
+    // Added for additional logging and debugging purposes
+    this.epicGuard.logger().debug("Performing geographical check for user {}|{}", user.nickname(), user.address());
     return this.evaluate(this.epicGuard.config().geographical().checkMode(), () -> this.isRestricted(user.address()));
   }
 

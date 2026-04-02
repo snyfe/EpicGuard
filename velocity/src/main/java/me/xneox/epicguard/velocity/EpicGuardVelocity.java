@@ -49,9 +49,9 @@ import java.util.stream.Stream;
         id = "epicguard",
         name = "EpicGuard",
         version = Constants.CURRENT_VERSION,
-        description = "Bot protection system for Minecraft servers.",
-        url = "https://github.com/4drian3d/EpicGuard",
-        authors = {"neox", "4drian3d"})
+        description = "A fork of the original Bot protection system for Minecraft servers.",
+        url = "https://github.com/snyfe/EpicGuard",
+        authors = {"neox", "4drian3d", "snyfe"})
 public final class EpicGuardVelocity implements Platform {
     @Inject
     private ProxyServer server;

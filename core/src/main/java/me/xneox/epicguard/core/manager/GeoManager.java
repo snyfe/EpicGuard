@@ -78,7 +78,11 @@ public final class GeoManager {
 
       } else {
         epicGuard.logger().info("GeoIP database download is disabled, skipping...");
-        return;
+
+        // This is to allow initialization of the GeoManager Database without downloading the databases making it independent from 'geoDatabaseDownload' value
+        if (!epicGuard.config().misc().geoDatabaseApiCall()) {
+          return;
+        }
       }
 
       this.countryReader = new DatabaseReader.Builder(countryDatabase.toFile()).withCache(new CHMCache()).build();

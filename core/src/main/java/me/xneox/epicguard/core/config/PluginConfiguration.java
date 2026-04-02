@@ -426,6 +426,12 @@ public class PluginConfiguration {
     @Comment("Set to false to not try to download the latest geolocation database.")
     private boolean geoDatabaseDownload = false;
 
+    @Comment("""
+            Set to false to not use API for checking if the database is up to date and downloading it. 
+            If false, plugin will only try to load the database from disk, 
+            and if it's not there, it will log an error and disable the GeoIP features.""")
+    private boolean geoDatabaseApiCall = true;
+
     @Comment("MaxMind key for downloading the GeoIP database")
     private String geoDatabaseKey = "";
 
@@ -459,6 +465,10 @@ public class PluginConfiguration {
 
     public boolean geoDatabaseDownload() {
       return this.geoDatabaseDownload;
+    }
+
+    public boolean geoDatabaseApiCall() {
+      return this.geoDatabaseApiCall;
     }
 
     public String getGeoDatabaseKey() {

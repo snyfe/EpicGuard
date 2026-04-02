@@ -24,7 +24,7 @@ import org.jetbrains.annotations.NotNull;
  * This util holds current EpicGuard version and checks for the latest available version.
  */
 public final class VersionUtils {
-    private static final String CHECK_URL = "https://raw.githubusercontent.com/4drian3d/EpicGuard/master/VERSION.txt";
+    private static final String CHECK_URL = "https://raw.githubusercontent.com/snyfe/EpicGuard/master/VERSION.txt";
 
     private static boolean updateAvailable;
 
