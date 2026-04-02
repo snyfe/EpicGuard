@@ -1,10 +1,12 @@
-# 🛡 EpicGuard [![GitHub stars](https://img.shields.io/github/stars/4drian3d/EpicGuard)](https://github.com/4drian3d/EpicGuard/stargazers) [![GitHub forks](https://img.shields.io/github/forks/4drian3d/EpicGuard)](https://github.com/4drian3d/EpicGuard/network) [![GitHub issues](https://img.shields.io/github/issues/4drian3d/EpicGuard)](https://github.com/4drian3d/EpicGuard/issues) [![GitHub license](https://img.shields.io/github/license/4drian3d/EpicGuard)](https://github.com/4drian3d/EpicGuard/blob/master/LICENSE) [![Java CI](https://github.com/4drian3d/EpicGuard/actions/workflows/gradle.yml/badge.svg)](https://github.com/4drian3d/EpicGuard/actions/workflows/gradle.yml)
+# 🛡 EpicGuard [![GitHub stars](https://img.shields.io/github/stars/snyfe/EpicGuard)](https://github.com/snyfe/EpicGuard/stargazers) [![GitHub forks](https://img.shields.io/github/forks/snyfe/EpicGuard)](https://github.com/snyfe/EpicGuard/network) [![GitHub issues](https://img.shields.io/github/issues/snyfe/EpicGuard)](https://github.com/snyfe/EpicGuard/issues) [![GitHub license](https://img.shields.io/github/license/snyfe/EpicGuard)](https://github.com/snyfe/EpicGuard/blob/master/LICENSE)
+<!-- [![Java CI](https://github.com/snyfe/EpicGuard/actions/workflows/gradle.yml/badge.svg)](https://github.com/snyfe/EpicGuard/actions/workflows/gradle.yml) -->
 A simple AntiBot plugin for newest Minecraft versions.
 
 > [!IMPORTANT]
-> This version of EpicGuard has been discontinued; the last published version will be 7.6.1.
+> This is a forked version if EpicGuard with minor changes.
+<!-- > This source version of EpicGuard has been discontinued; the last published version will be 7.6.1.
 > I don't feel that I am the developer this project needs.
-> Any other developer can take over the project, just as I did when I forked the original project.
+> Any other developer can take over the project, just as I did when I forked the original project. -->
 
 ## ✅ Supported platforms / Latest release requirements
 * [Paper 1.20.1+](https://papermc.io/) *(all paper forks are supported)*
@@ -57,7 +59,7 @@ repositories {
     mavenCentral()
 }
 dependencies {
-    compileOnly("com.github.4drian3d:epicguard-api:[VERSION HERE]")
+    compileOnly("com.github.snyfe:epicguard-api:[VERSION HERE]")
 }
 ```
 </details>
@@ -73,7 +75,7 @@ repositories {
   mavenCentral()
 }
 dependencies {
-    compileOnly 'io.github.4drian3d:epicguard-api:[VERSION OR COMMIT ID HERE]'
+    compileOnly 'io.github.snyfe:epicguard-api:[VERSION OR COMMIT ID HERE]'
 }
 ```
 </details>
@@ -91,7 +93,7 @@ dependencies {
   </repositories>
   <dependencies>
       <dependency>
-         <groupId>io.github.4drian3d</groupId>
+         <groupId>io.github.snyfe</groupId>
          <artifactId>epicguard-api</artifactId>
          <version>[VERSION HERE]</version>
          <scope>provided</scope>
